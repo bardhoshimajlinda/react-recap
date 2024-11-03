@@ -12,6 +12,9 @@ const Home = () => {
         <Link to="/form-example" className="example-link">
           Form Example
         </Link>
+        <Link to="/travel-journey" className="example-link">
+          Travel journal
+        </Link>
       </div>
     </div>
   );

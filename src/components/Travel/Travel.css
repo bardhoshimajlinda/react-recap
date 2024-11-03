@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  .app {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f55a5a;
+    padding: 20px;
+    color: white;
+    border-radius: 8px 8px 0 0;
+  }
+  .header--logo {
+    width: 30px;
+    margin-right: 10px;
+  }
+  .header--title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+  }
+  .main {
+    padding: 20px;
+  }
+
+  .card-travel {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .travel--image {
+    width: 145px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .travel--info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .travel--location {
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .travel--country {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 5px;
+  }
+  
+  .travel--map-link {
+    color: #918e9b;
+    text-decoration: none;
+    font-size: 0.8rem;
+  }
+  
+  .travel--title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .travel--dates {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .travel--description {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+  }
