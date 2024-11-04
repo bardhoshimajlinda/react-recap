@@ -212,3 +212,20 @@ p {
   background-color: #949ba2;
   color: #fff;
 }
+/* boxes page style */
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+}

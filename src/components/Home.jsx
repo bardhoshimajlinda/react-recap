@@ -15,6 +15,9 @@ const Home = () => {
         <Link to="/travel-journey" className="example-link">
           Travel journal
         </Link>
+        <Link to="/boxes" className="example-link">
+          Box style
+        </Link>
       </div>
     </div>
   );
