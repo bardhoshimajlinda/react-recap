@@ -5,6 +5,7 @@ import FormExample from "./components/FormExample";
 import Fruits from "./components/Fruits";
 import BoxPage from "./components/BoxPage";
 import Travel from "./components/Travel/Travel";
+import Airbnb from "./components/Airbnb/Airbnb";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/fruits" element={<Fruits />} />
         <Route path="/travel-journey" element={<Travel />} />
         <Route path="/boxes" element={<BoxPage />} />
+        <Route path="/airbnb" element={<Airbnb />} />
       </Routes>
     </BrowserRouter>
   );

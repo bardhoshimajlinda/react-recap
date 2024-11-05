@@ -18,6 +18,9 @@ const Home = () => {
         <Link to="/boxes" className="example-link">
           Box style
         </Link>
+        <Link to="/airbnb" className="example-link">
+          Airbnb
+        </Link>
       </div>
     </div>
   );
