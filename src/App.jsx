@@ -6,6 +6,7 @@ import Fruits from "./components/Fruits";
 import BoxPage from "./components/BoxPage";
 import Travel from "./components/Travel/Travel";
 import Airbnb from "./components/Airbnb/Airbnb";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/travel-journey" element={<Travel />} />
         <Route path="/boxes" element={<BoxPage />} />
         <Route path="/airbnb" element={<Airbnb />} />
+        <Route path="/*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
   );
