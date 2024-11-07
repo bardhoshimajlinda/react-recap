@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Box from "./Box";
-import boxdata from "./boxdata";
+import Box from "../components/Box";
+import boxdata from "../components/boxdata";
 
 const BoxPage = () => {
   const [boxes, setBoxes] = useState(boxdata);

@@ -34,6 +34,7 @@ const FormExample = () => {
           <label>
             Enter name:
             <input
+              className="form-input"
               type="text"
               name="username"
               value={inputs.username}
@@ -73,6 +74,7 @@ const FormExample = () => {
           <fieldset>
             <legend>Gender</legend>
             <input
+              className="form-input"
               type="radio"
               id="female"
               value="female"
@@ -90,6 +92,7 @@ const FormExample = () => {
               checked={inputs.gender === "male"}
               onChange={handleChange}
             />
+
             <label htmlFor="male">Male</label>
             <br />
             <input
@@ -115,7 +118,9 @@ const FormExample = () => {
             </select>
           </label>
 
-          <button type="submit">Send</button>
+          <button className="send" type="submit">
+            Send
+          </button>
         </form>
       </div>
     </div>

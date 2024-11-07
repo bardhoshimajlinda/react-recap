@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const SearchFruits = () => {
+const Fruits = () => {
   const fruits = [
     "Apple",
     "Apricot",
@@ -72,4 +72,4 @@ const SearchFruits = () => {
   );
 };
 
-export default SearchFruits;
+export default Fruits;

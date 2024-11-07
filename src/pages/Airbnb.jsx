@@ -1,8 +1,8 @@
-import "./Airbnb.css";
-import Card from "./Card";
-import Hero from "./Hero";
-import Navbar from "./Navbar";
-import data from "./data";
+import "../components/Airbnb/Airbnb.css";
+import Card from "../components/Airbnb/Card";
+import Hero from "../components/Airbnb/Hero";
+import Navbar from "../components/Airbnb/Navbar";
+import data from "../components/Airbnb/data";
 
 export default function Airbnb() {
   const cards = data.map((item) => {
