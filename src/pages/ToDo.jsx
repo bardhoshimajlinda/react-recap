@@ -30,15 +30,49 @@ const ToDo = () => {
   };
 
   return (
-    <div>
-      <div className="addTask">
+    <div
+      className="todos"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        padding: "100px",
+        width: "1100px",
+      }}
+    >
+      <div
+        className="addTask"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          marginBottom: "10px",
+        }}
+      >
         <input
           className="new-task"
           type="text"
           value={newTask}
           onChange={handleData}
+          style={{
+            padding: "8px",
+            marginRight: "10px",
+            borderRadius: "5px",
+            border: "1px solid #ccc",
+            flex: "1",
+          }}
         />
-        <button className="add-task" onClick={addTask}>
+        <button
+          className="add-task"
+          onClick={addTask}
+          style={{
+            padding: "8px 12px",
+            backgroundColor: "#28a745",
+            color: "#fff",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+          }}
+        >
           Add task
         </button>
       </div>
