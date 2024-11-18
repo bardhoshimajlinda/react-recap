@@ -1,13 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Task from "../components/Task";
 
 const ToDo = () => {
-  const [todoList, setTodoList] = useState([]);
+  const [todoList, setTodoList] = useState(() => {
+    const savedTodos = localStorage.getItem("todoList");
+    return savedTodos ? JSON.parse(savedTodos) : [];
+  });
   const [newTask, setNewTask] = useState("");
 
   const handleData = (event) => setNewTask(event.target.value);
 
   const addTask = () => {
+    if (newTask.trim() === "") {
+      alert("Task cannot be empty!");
+      return;
+    }
     const task = {
       id: todoList.length === 0 ? 1 : todoList[todoList.length - 1].id + 1,
       taskName: newTask,
@@ -28,6 +35,10 @@ const ToDo = () => {
       )
     );
   };
+
+  useEffect(() => {
+    localStorage.setItem("todoList", JSON.stringify(todoList));
+  }, [todoList]);
 
   return (
     <div
