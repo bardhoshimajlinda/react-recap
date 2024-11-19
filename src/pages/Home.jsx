@@ -25,6 +25,9 @@ const Home = () => {
           <Link to="/todo" className="example-link">
             TODO
           </Link>
+          <Link to="/memory-game" className="example-link">
+            Memory Game
+          </Link>
         </div>
       </div>
     </>

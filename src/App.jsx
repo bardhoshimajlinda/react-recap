@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import PageNotFound from "./pages/PageNotFound";
 import ToDo from "./pages/ToDo";
 import Travel from "./pages/Travel";
+import MemoryGame from "./pages/MemoryGame";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/travel-journey" element={<Travel />} />
           <Route path="/boxes" element={<BoxPage />} />
           <Route path="/todo" element={<ToDo />} />
+          <Route path="/memory-game" element={<MemoryGame />} />
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
