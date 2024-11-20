@@ -1,54 +1,53 @@
 * {
-  font-family: monospace;  
+  font-family: monospace;
   box-sizing: border-box;
 }
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
 /* box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);  */
 
-
 /* First page style: */
 .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-    color: #333;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
 }
 h1 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 10px;
-} 
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
 p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
 }
-  
+
 .link-list {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-  
+
 .example-link {
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: #626d78;
-    padding: 10px 20px;
-    border: 2px solid #383a3c2a;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #626d78;
+  padding: 10px 20px;
+  border: 2px solid #383a3c2a;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 .example-link:hover {
-    background-color: #949ba2;
-    color: #fff;
+  background-color: #949ba2;
+  color: #fff;
 }
 
 /* FormExample style: */
@@ -57,8 +56,8 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; 
-  background-color: #f5f5f5; 
+  height: 100vh;
+  background-color: #f5f5f5;
 }
 
 h2 {
@@ -73,7 +72,7 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 500px;
   width: 100%;
-  background-color: #ffffffbc; 
+  background-color: #ffffffbc;
   border: 1px solid #ccc;
 }
 
@@ -100,55 +99,55 @@ textarea {
 }
 
 label.isStudent {
-    font-size: 1rem;
-    color: #626d78;
-    display: flex; 
-    align-items: center;
-    gap: 10px; 
-    cursor: pointer; 
+  font-size: 1rem;
+  color: #626d78;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
 input[type="checkbox"] {
-    width: 20px;
-    height: 15px; 
-    accent-color: #949ba2; 
-    cursor: pointer;
+  width: 20px;
+  height: 15px;
+  accent-color: #949ba2;
+  cursor: pointer;
 }
 
 fieldset {
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    padding: 10px; 
-    background-color: #ffffffac; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ffffffac;
 }
 legend {
-    color: #333; 
-    font-size: 1.2rem; 
+  color: #333;
+  font-size: 1.2rem;
 }
 
 input[type="radio"] {
-    margin-right: 10px;
-    cursor: pointer;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 select {
-    width: 100%;
-    padding: 8px; 
-    border: 2px solid #383a3c2a; 
-    border-radius: 5px; 
-    font-size: 1rem; 
-    color: #333; 
-    background-color: #f5f5f5; 
-    cursor: pointer; 
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #383a3c2a;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f5f5f5;
+  cursor: pointer;
 }
 
 select:focus {
-    border-color: #626d78; 
-    outline: none; 
-    box-shadow: 0 0 5px rgba(98, 109, 120, 0.5);
+  border-color: #626d78;
+  outline: none;
+  box-shadow: 0 0 5px rgba(98, 109, 120, 0.5);
 }
 
 option {
-    padding: 10px; 
+  padding: 10px;
 }
 
 button {
@@ -169,70 +168,93 @@ button:hover {
 /* Fruits Search style: */
 
 .fruits-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; 
-    background-color: #f5f5f5; 
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
 }
 .fruits-box {
-    background-color: #ffffffbc; 
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    width: 100%;
-    height: 900px;
+  background-color: #ffffffbc;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  height: 900px;
 }
 
 .search-input {
-    padding: 10px;
-    font-size: 1rem;
-    width: 100%;
-    border: 2px solid #383a3c2a;
-    border-radius: 5px;
-    margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  border: 2px solid #383a3c2a;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
-  
+
 .results {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
 }
-  
+
 .fruit-item {
-    font-size: 1.1rem;
-    border-radius: 5px;
-    width: 100%;
-    text-align: center;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
 }
-  
+
 .no-match {
-    font-size: 1.1rem;
-    color: #d9534f;
+  font-size: 1.1rem;
+  color: #d9534f;
 }
 
 /* boxes page style */
 
 .box-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 100vh;
-  }
-  
-  .box {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.39);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
 
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+}
 
-  
+/* memory game */
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
