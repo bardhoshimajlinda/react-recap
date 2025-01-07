@@ -28,6 +28,9 @@ const Home = () => {
           <Link to="/memory-game" className="example-link">
             Memory Game
           </Link>
+          <Link to="/recipe" className="example-link">
+            Recipe
+          </Link>
         </div>
       </div>
     </>

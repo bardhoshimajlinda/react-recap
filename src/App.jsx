@@ -9,6 +9,7 @@ import PageNotFound from "./pages/PageNotFound";
 import ToDo from "./pages/ToDo";
 import Travel from "./pages/Travel";
 import MemoryGame from "./pages/MemoryGame";
+import Recipe from "./pages/Recipe";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/boxes" element={<BoxPage />} />
           <Route path="/todo" element={<ToDo />} />
           <Route path="/memory-game" element={<MemoryGame />} />
+          <Route path="/recipe" element={<Recipe />} />
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
