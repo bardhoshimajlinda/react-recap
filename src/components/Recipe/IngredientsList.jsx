@@ -1,4 +1,5 @@
 export default function IngredientsList(props) {
+  console.log(import.meta.env.VITE_API_KEY);
   const ingredientsListItems = props.ingredients.map((ingredient) => (
     <li key={ingredient}>{ingredient}</li>
   ));
