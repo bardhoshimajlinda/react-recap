@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="recipe-header">
       <img src={chefLogo} />
-      <h1>Chef Claude</h1>
+      <h1>Chef Recipe</h1>
     </header>
   );
 };
