@@ -8,7 +8,7 @@ body {
   background-color: #fafaf8;
 }
 
-header {
+header.recipe-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,16 +19,20 @@ header {
     0px 1px 2px 0px rgba(0, 0, 0, 0.06);
 }
 
-header > img {
+header.recipe-header > img {
   width: 50px;
 }
 
-header > h1 {
+header.recipe-header > h1 {
   font-weight: 400;
 }
 
 main {
   padding: 30px 30px 10px;
+}
+main h3 {
+  margin-left: 460px;
+  margin-bottom: 20px;
 }
 
 .add-ingredient-form {

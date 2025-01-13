@@ -24,6 +24,7 @@ export default function Main() {
 
   return (
     <main>
+      <h3>Please add at least 4 ingredient to get a recipe</h3>
       <form onSubmit={addIngredient} className="add-ingredient-form">
         <input
           type="text"
@@ -41,6 +42,7 @@ export default function Main() {
       {loading && <p className="loading">Loading your recipe...</p>}
 
       {recipe && !loading && <ChefRecipe recipe={recipe} />}
+      {!recipe && <div>No results found, please check the ingredients.</div>}
     </main>
   );
 }
