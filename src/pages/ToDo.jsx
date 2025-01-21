@@ -1,11 +1,31 @@
-import { useState, useEffect } from "react";
+import { useReducer, useState, useEffect } from "react";
 import Task from "../components/Task";
 
+const todoReducer = (state, action) => {
+  switch (action.type) {
+    case "ADD_TASK":
+      return [...state, action.payload];
+    case "DELETE_TASK":
+      return state.filter((task) => task.id !== action.payload);
+    case "TOGGLE_TASK":
+      return state.map((task) =>
+        task.id === action.payload
+          ? { ...task, isCompleted: !task.isCompleted }
+          : task
+      );
+    case "LOAD_TASKS":
+      return action.payload;
+    default:
+      return state;
+  }
+};
+
 const ToDo = () => {
-  const [todoList, setTodoList] = useState(() => {
+  const [todoList, dispatch] = useReducer(todoReducer, [], () => {
     const savedTodos = localStorage.getItem("todoList");
     return savedTodos ? JSON.parse(savedTodos) : [];
   });
+
   const [newTask, setNewTask] = useState("");
 
   const handleData = (event) => setNewTask(event.target.value);
@@ -20,20 +40,22 @@ const ToDo = () => {
       taskName: newTask,
       isCompleted: false,
     };
-    setTodoList([...todoList, task]);
-    setNewTask(" ");
+    dispatch({ type: "ADD_TASK", payload: task });
+    setNewTask("");
   };
 
   const deleteTask = (taskId) => {
-    setTodoList(todoList.filter((task) => task.id !== taskId));
+    dispatch({ type: "DELETE_TASK", payload: taskId });
   };
 
   const completeTask = (taskId) => {
-    setTodoList((prevTasks) =>
-      prevTasks.map((task) =>
-        task.id === taskId ? { ...task, isCompleted: !task.isCompleted } : task
-      )
-    );
+    dispatch({ type: "TOGGLE_TASK", payload: taskId });
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      addTask();
+    }
   };
 
   useEffect(() => {
@@ -64,6 +86,7 @@ const ToDo = () => {
           type="text"
           value={newTask}
           onChange={handleData}
+          onKeyDown={handleKeyDown}
           style={{
             padding: "8px",
             marginRight: "10px",
