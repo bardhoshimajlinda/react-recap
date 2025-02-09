@@ -150,7 +150,7 @@ option {
   padding: 10px;
 }
 
-button {
+.form-container button {
   padding: 10px 20px;
   font-size: 1rem;
   color: #fff;
@@ -161,7 +161,7 @@ button {
   transition: background-color 0.3s;
 }
 
-button:hover {
+.form-container button:hover {
   background-color: #626d78;
 }
 
@@ -172,7 +172,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 130vh;
   background-color: #f5f5f5;
 }
 .fruits-box {
@@ -263,4 +263,39 @@ button:hover {
 .memory-card.flipped {
   background-color: #4caf50;
   color: white;
+}
+
+/*Counter*/
+
+.counter-app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-app button {
+  margin: 10px;
+  padding: 9px;
+  color: black;
+  border: 1px solid #2e2a2a71;
+  border-radius: 5px;
+}
+
+.counter-app {
+  text-align: center;
+  background: #f4f4f4;
+  padding: 30px;
+  border-radius: 10px;
+  width: 500px;
+  margin: 50px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.counter-app h2 {
+  margin-bottom: 15px;
+  color: #2e2a2a;
+}
+.counter-app span {
+  color: #2e2a2a;
+  font-size: 25px;
 }

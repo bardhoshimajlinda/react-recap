@@ -31,6 +31,9 @@ const Home = () => {
           <Link to="/recipe" className="example-link">
             Recipe
           </Link>
+          <Link to="/counter" className="example-link">
+            Counter
+          </Link>
         </div>
       </div>
     </>
