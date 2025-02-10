@@ -11,6 +11,7 @@ import Travel from "./pages/Travel";
 import MemoryGame from "./pages/MemoryGame";
 import Recipe from "./pages/Recipe";
 import Counter from "./pages/Counter";
+import TicTacToe from "./pages/TicTacToe";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/memory-game" element={<MemoryGame />} />
           <Route path="/recipe" element={<Recipe />} />
           <Route path="/counter" element={<Counter />} />
+          <Route path="/tic-tac-toe" element={<TicTacToe />} />
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
